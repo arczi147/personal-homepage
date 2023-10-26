@@ -35,3 +35,5 @@ export const futureSkillList = [
     "TypeScript",
     "JS classes",
 ];
+
+export const GitHubAPI = "https://api.github.com/users/arczi147/repos";
