@@ -1,6 +1,6 @@
 import { delay, call, put, takeLatest } from "redux-saga/effects";
 import { getProjects } from "./getProjects";
-import { fecthProjectsError, fetchProjects, fetchProjectsSuccess } from "./projectsSlice";
+import { fetchProjectsError, fetchProjects, fetchProjectsSuccess } from "./projectsSlice";
 
 function* fetchProjectsHandler() {
     try {
@@ -8,7 +8,7 @@ function* fetchProjectsHandler() {
         const projects = yield call(getProjects);
         yield put(fetchProjectsSuccess(projects));
     } catch (error) {
-        yield put(fecthProjectsError());
+        yield put(fetchProjectsError());
     }
 }
 
