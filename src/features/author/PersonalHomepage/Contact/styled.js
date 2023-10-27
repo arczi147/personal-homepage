@@ -1,11 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as GitHubIcon } from "../../../../images/GitHub-black.svg";
-import { ReactComponent as FacebookIcon } from "../../../../images/Facebook.svg";
-import { ReactComponent as LinkedINIcon } from "../../../../images/LinkedIN.svg";
-import { ReactComponent as InstagramIcon } from "../../../../images/Instagram.svg";
 
 export const Wrapper = styled.div`
-
+    margin-bottom: 110px;
 `;
 
 export const LetsTalk = styled.p`
@@ -17,7 +13,8 @@ export const LetsTalk = styled.p`
     margin-bottom: 24px;
 `;
 
-export const Email = styled.h1`
+export const Email = styled.a`
+    text-decoration: none;
     color: ${({ theme }) => theme.color.mineShaft};
     font-size: 32px;
     line-height: normal;
@@ -32,31 +29,4 @@ export const AboutMe = styled.p`
     width: 670px;
     text-align: justify;
     margin-bottom: 56px;
-`;
-
-export const Socials = styled.a`
-    display: flex;
-    align-items: flex-start;
-    gap: 24px;
-    margin-bottom: 110px;
-`;
-
-export const StyledGitHubIcon = styled(GitHubIcon)`
-    width: 48px;
-    height: 48px;
-`;
-
-export const StyledFacebookIcon = styled(FacebookIcon)`
-    width: 48px;
-    height: 48px;
-`;
-
-export const StyledLinkedINIcon = styled(LinkedINIcon)`
-    width: 48px;
-    height: 48px;
-`;
-
-export const StyledInstagramIcon = styled(InstagramIcon)`
-    width: 48px;
-    height: 48px;
 `;
