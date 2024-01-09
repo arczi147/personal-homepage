@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const List = styled.ul`
-    margin: 24px;
+    margin: 24px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
