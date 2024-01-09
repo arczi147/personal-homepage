@@ -6,6 +6,6 @@ export const getProjects = async () => {
     if (!response.ok) {
         new Error(response.statusText);
     }
-    
-    return await response.data;
+   
+    return await response.json();
 };
