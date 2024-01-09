@@ -13,14 +13,16 @@ export const Icon = styled(GitHubIcon)`
 export const Header = styled.h2`
     font-size: 30px;
     font-weight: 900;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.sectionTitle};
     margin: 12px 0 0 0;
+    transition: 0.3s;
 `;
 
 export const SubHeader = styled.h3`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.sectionTitle};
     font-size: 20px;
     line-height: 1.4;
     margin: 8px 0 0 0;
     font-weight: 400;
+    transition: 0.3s;
 `;

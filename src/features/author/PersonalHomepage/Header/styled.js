@@ -4,7 +4,7 @@ import { ButtonLink } from "../../ButtonLink";
 
 export const Wrapper = styled.header`
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 3fr 1fr;
     grid-gap: 64px;
 `;
 
@@ -21,22 +21,25 @@ export const AboutMe = styled.div`
 export const ThisIs = styled.p`
     font-size: 12px;
     font-weight: 700;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.thisIs};
     text-transform: uppercase;
     margin-top: 50px;
+    transition: 0.3s;
 `;
 
 export const Name = styled.h1`
     font-size: 38px;
     font-weight: 900;
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.sectionTitle};
+    transition: 0.3s;
 `;
 
 export const Content = styled.p`
     font-size: 20px;
     line-height: 1.4;
     text-align: justify;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.aboutMe};
+    transition: 0.3s;
 `;
 
 export const StyledButtonLink = styled(ButtonLink)`

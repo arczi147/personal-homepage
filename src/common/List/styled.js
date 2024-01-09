@@ -15,7 +15,8 @@ export const StyledList = styled.ul`
 export const Item = styled.li`
     list-style: none;
     font-size: 18px;
-    color: ${({ theme }) => theme.color.slateGray};
+    color: ${({ theme }) => theme.color.listText};
+    transition: 0.3s;
 `;
 
 export const Dash = styled(DashIcon)`

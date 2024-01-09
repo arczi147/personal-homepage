@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${({ theme }) => theme.color.whiteLilac};
+        background-color: ${({ theme }) => theme.color.mainBackground};
         font-family: 'Inter', sans-serif;
+        transition: 0.3s;
     }
 `;
