@@ -1,6 +1,7 @@
 import { Wrapper, Image, ThisIs, Name, AboutMe, Content, StyledButtonLink, Icon } from "./styled";
 import photo from "../../../../images/Artur.png";
 import { email } from "../../../../common/data";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export const Header = () => {
     return (
@@ -22,6 +23,7 @@ export const Header = () => {
                     Hire Me
                 </StyledButtonLink>
             </AboutMe>
+            <ThemeSwitcher />
         </Wrapper>
     )
 };
