@@ -37,6 +37,7 @@ export const themeLight = {
         switchBorder: colors.semiGray,
         switchIconWrapper: colors.slateGray,
         infoLoading: colors.mineShaft,
+        errorText: colors.mineShaft,
     },
 };
 
@@ -66,5 +67,6 @@ export const themeDark = {
         switchBorder: colors.white,
         switchIconWrapper: colors.white,
         infoLoading: colors.white,
+        errorText: colors.white,
     },
 };

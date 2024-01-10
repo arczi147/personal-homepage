@@ -10,16 +10,20 @@ export const StyledError = styled.div`
 export const Icon = styled(DangerIcon)`
     width: 48px;
     height: 48px;
+
+    path {
+    stroke: ${({ theme }) => theme.color.icons};
+  }
 `;
 
 export const Message = styled.h2`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.errorText};
     font-size: 24px;
     margin: 18px 0 32px 0;
 `;
 
 export const Info = styled.span`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.errorText};
     font-size: 20px;
     line-height: 1.4;
     display: block;
