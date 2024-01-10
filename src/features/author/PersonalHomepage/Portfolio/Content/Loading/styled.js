@@ -1,5 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ReactComponent as LoadingIcon } from "../../../../../../images/spinner.svg";
+
+const rotate = keyframes`
+to {
+    transform: rotate(360deg);
+}
+`;
 
 export const StyledLoading = styled.div`
     text-align: center;
@@ -18,4 +24,5 @@ export const Icon = styled(LoadingIcon)`
     width: 160px;
     height: 160px;
     margin-bottom: 140px;
+    animation: ${rotate} 1s linear infinite;
 `;
