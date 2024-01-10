@@ -13,7 +13,7 @@ export const StyledLoading = styled.div`
 `;
 
 export const Info = styled.span`
-    color: ${({ theme }) => theme.color.mineShaft};
+    color: ${({ theme }) => theme.color.infoLoading};
     font-size: 20px;
     line-height: 1.4;
     display: block;

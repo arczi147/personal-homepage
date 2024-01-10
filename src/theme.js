@@ -36,6 +36,7 @@ export const themeLight = {
         switchBackground: colors.iron,
         switchBorder: colors.semiGray,
         switchIconWrapper: colors.slateGray,
+        infoLoading: colors.mineShaft,
     },
 };
 
@@ -64,5 +65,6 @@ export const themeDark = {
         switchBackground: colors.semiGray,
         switchBorder: colors.white,
         switchIconWrapper: colors.white,
+        infoLoading: colors.white,
     },
 };
