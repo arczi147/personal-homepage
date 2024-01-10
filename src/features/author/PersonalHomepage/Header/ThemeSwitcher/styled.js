@@ -8,6 +8,12 @@ export const Wrapper = styled.div`
     gap: 12px;
     width: 160px;
     height: 26px;
+    position: absolute;
+    right: 0px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        width: 50px;
+    }
 `;
 
 export const Name = styled.p`
@@ -18,6 +24,10 @@ export const Name = styled.p`
     text-transform: uppercase;
     margin: auto;
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        display: none;
+    }
 `;
 
 export const Button = styled.button`

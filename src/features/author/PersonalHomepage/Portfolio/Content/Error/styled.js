@@ -32,4 +32,8 @@ export const Info = styled.span`
 export const StyledButtonLink = styled(ButtonLink)`
     margin: 16px auto 140px;
     display: inline-flex;
+
+    &:hover {
+        box-shadow: 0px 0px 0px 2px rgba(0, 160, 255, 1);
+    }
 `;

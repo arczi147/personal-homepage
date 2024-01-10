@@ -7,4 +7,8 @@ export const List = styled.ul`
     list-style: none;
     padding: 0;
     grid-gap: 32px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
+        grid-template-columns: 1fr;
+    }
 `;

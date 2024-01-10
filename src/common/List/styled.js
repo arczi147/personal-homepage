@@ -10,6 +10,13 @@ export const StyledList = styled.ul`
     margin-top: 32px;
     line-height: 1.4;
     margin-bottom: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: ${({ theme }) => theme.breakpoint.mobile}) and (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 `;
 
 export const Item = styled.li`

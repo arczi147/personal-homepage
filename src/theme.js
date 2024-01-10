@@ -8,7 +8,12 @@ const colors = {
     semiDark: "#363636",
     dodgerBlue: "#2188FF",
     semiGray: "rgba(54, 54, 54, 0.72)",
+};
 
+const breakpoints = {
+    mobile: "767px",
+    tablet: "991px",
+    narrow: "1199px",
 };
 
 export const themeLight = {
@@ -39,6 +44,11 @@ export const themeLight = {
         infoLoading: colors.mineShaft,
         errorText: colors.mineShaft,
     },
+    breakpoint: {
+        mobile: breakpoints.mobile,
+        tablet: breakpoints.tablet,
+        narrow: breakpoints.narrow,
+    },
 };
 
 export const themeDark = {
@@ -68,5 +78,10 @@ export const themeDark = {
         switchIconWrapper: colors.white,
         infoLoading: colors.white,
         errorText: colors.white,
+    },
+    breakpoint: {
+        mobile: breakpoints.mobile,
+        tablet: breakpoints.tablet,
+        narrow: breakpoints.narrow,
     },
 };
