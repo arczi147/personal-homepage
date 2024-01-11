@@ -13,6 +13,7 @@ export const StyledList = styled.ul`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
         grid-template-columns: 1fr;
+        margin-top: 12px;
     }
     @media (min-width: ${({ theme }) => theme.breakpoint.mobile}) and (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
         grid-template-columns: repeat(2, 1fr);
@@ -24,6 +25,10 @@ export const Item = styled.li`
     font-size: 18px;
     color: ${({ theme }) => theme.color.listText};
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        font-size: 14px;
+    }
 `;
 
 export const Dash = styled(DashIcon)`

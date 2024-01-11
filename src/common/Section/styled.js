@@ -13,6 +13,11 @@ export const Wrapper = styled.div`
     @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
         margin-top: 48px;
     }
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        padding: 16px;
+        margin-bottom: 50px;
+    }
 `;
 
 export const Title = styled.h2`
@@ -23,6 +28,11 @@ export const Title = styled.h2`
     border-bottom: 1px solid ${({ theme }) => theme.color.titleUnderline};
     margin: 0;
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
 `;
 
 export const Content = styled.div`

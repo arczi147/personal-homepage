@@ -8,6 +8,7 @@ const colors = {
     semiDark: "#363636",
     dodgerBlue: "#2188FF",
     semiGray: "rgba(54, 54, 54, 0.72)",
+    malibu: "#5CA8FF",
 };
 
 const breakpoints = {
@@ -43,6 +44,7 @@ export const themeLight = {
         switchIconWrapper: colors.slateGray,
         infoLoading: colors.mineShaft,
         errorText: colors.mineShaft,
+        linkHover: colors.dodgerBlue,
     },
     breakpoint: {
         mobile: breakpoints.mobile,
@@ -78,6 +80,7 @@ export const themeDark = {
         switchIconWrapper: colors.white,
         infoLoading: colors.white,
         errorText: colors.white,
+        linkHover: colors.malibu,
     },
     breakpoint: {
         mobile: breakpoints.mobile,

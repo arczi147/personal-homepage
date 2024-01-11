@@ -33,6 +33,10 @@ export const Name = styled.h2`
     font-weight: 700;
     transition: 0.3s;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        font-size: 16px;
+    }
 `;
 
 export const Description = styled.p`
@@ -44,6 +48,7 @@ export const Description = styled.p`
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobile}) { 
         margin: 16px 0;
+        font-size: 14px;
     }
 `;
 
@@ -57,6 +62,10 @@ export const DemoLink = styled.div`
     display: flex;
     flex-wrap: wrap;
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        font-size: 14px;
+    }
 `;
 
 export const Link = styled.a`
@@ -65,4 +74,12 @@ export const Link = styled.a`
     line-height: 1.4;
     word-break: break-word;
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: ${({ theme }) => theme.color.linkHover};
+    }
 `;
