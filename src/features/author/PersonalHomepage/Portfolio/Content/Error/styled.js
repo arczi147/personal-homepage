@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as DangerIcon } from "../../../../../../images/danger.svg";
-import { ButtonLink } from "../../../../ButtonLink";
+import { ButtonLink } from "../../../ButtonLink";
 
 export const StyledError = styled.div`
     text-align: center;
