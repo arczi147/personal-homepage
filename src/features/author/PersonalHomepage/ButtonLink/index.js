@@ -10,4 +10,8 @@ export const ButtonLink = styled.a`
     border: none;
     text-decoration: none;
     transition: 0.3s;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+        font-size: 18px;
+    }
 `;
