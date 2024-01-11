@@ -2,9 +2,9 @@ import styled, { keyframes } from "styled-components";
 import { ReactComponent as LoadingIcon } from "../../../../../../images/spinner.svg";
 
 const rotate = keyframes`
-to {
-    transform: rotate(360deg);
-}
+    to {
+        transform: rotate(360deg);
+    }
 `;
 
 export const StyledLoading = styled.div`
