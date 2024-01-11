@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { ReactComponent as EmailIcon } from "../../../../images/Message.svg";
-import { ButtonLink } from "../../ButtonLink";
+import { ButtonLink } from "../ButtonLink";
 
 export const Wrapper = styled.header`
     display: grid;
